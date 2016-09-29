@@ -9,8 +9,23 @@
     <body>
         
         <style>
+        
+        .clr{
+        background-color: darkslategray        
+        }    
+            
+        .brd{
+        width: 960px;
+        border-left: 6px groove; /* Параметры границы */
+        border-right: 6px groove;
+        background-color: grey; /* Цвет фона */
+        padding: 10px; /* Поля вокруг текста */ 
+        margin-left: auto;
+        margin-right: auto;
+        }
+            
         .color1{
-            background-color: red
+        background-color: red
         }
             
         form {
@@ -18,12 +33,19 @@
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 50px;
         border: 10px solid #666;
         padding: 20px;
-        background-color: springgreen
+        background-color: forestgreen
+        }
+        
+        div {
+        margin-bottom: 10px;
         }
         </style>
         
+        <div class="clr">
+        <div class="brd">
         <h1 align="center">Привет, человеки!</h1>
         <h2 align="center"><i>Узрите...</i></h2>
         <h3 align="center"><i>пример работы делитанта в ХТМЛ</i></h3>
@@ -36,10 +58,18 @@
         
         <form>
         <h3 align="center">Что же теперь делать?!</h3>
-        <input type="radio">Покинуть страницу поскорее<br>
-        <input type="radio">Остаться<br>
-        <input type="radio">Посмотреть напоследок котиков<br>
-        <input type="reset">
+            <div>
+                <input type="radio">Покинуть страницу поскорее
+            </div>
+            <div>
+                <input type="radio">Остаться
+            </div>
+            <div>
+                <input type="radio">Посмотреть напоследок котиков
+            </div>
+            <div align="center">
+                <input type="reset">
+            </div>
         </form>
         <hr>
         <hr>
@@ -75,6 +105,8 @@
         <hr>
         <div align="center">
             <img src="dela.jpg">
+        </div>
+        </div>
         </div>
        
     </body>
